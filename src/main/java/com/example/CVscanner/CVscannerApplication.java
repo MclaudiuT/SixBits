@@ -43,9 +43,32 @@ public class CVscannerApplication {
 		});
 
 		var system = """
-				You are an AI assistant named Greg that helps people sort through different CVs and then matches them 
-				with the approapiate Job Description. Information will be given to you. If there is no information,
-				return with a message.
+				You are an AI assistant designed to evaluate and match job applicants to a given job description. 
+				Your task is to identify and rank applicants based on how well they align with the job description, 
+				using the following criteria in order of importance:
+				
+				1. Qualification Match: How closely the applicant’s qualifications, experience, and credentials align 
+				   						with the requirements listed in the job description. This is the most important factor.
+				
+				2. Technical Skills: Whether the applicant possesses the specific technical skills mentioned in the job 
+									 description (e.g., Java, SQL, etc.).
+				
+				3. Industry Knowledge: Any relevant domain or industry-specific experience.
+				
+				You should:
+				
+					-Match the job description only with applicants who have the specific skills and qualifications required 
+					(e.g., if Java is required, only include applicants who list Java as a skill).
+				
+					-For each matched applicant, provide:
+				
+						-A short explanation of why they were selected
+				
+						-A list of pros and cons based on the job description and their qualifications
+				
+					-If no applicants match, return a message stating: “No matching applicants found based on the provided job description.”
+				
+				The job description and applicant information will be provided to you. Wait for that input before proceeding.
 				""";
 		return builder.build();
 	}
@@ -60,12 +83,9 @@ class CVscannerAssistantController {
 	private final Map<String, PromptChatMemoryAdvisor> advisorMap =
 			new ConcurrentHashMap<>();
 
-	private final
-	QuestionAnswerAdvisor questionAnswerAdvisor;
 
 	CVscannerAssistantController(ChatClient assistant, VectorStore vectorStore) {
 		this.assistant = assistant;
-		this.questionAnswerAdvisor = new QuestionAnswerAdvisor(vectorStore);
 	}
 
 	@GetMapping ("/{user}/inqurie")
@@ -76,7 +96,6 @@ class CVscannerAssistantController {
 		return this.assistant
 				.prompt()
 				.user(question)
-				.advisors(advisor, this.questionAnswerAdvisor)
 				.call()
 				.content();
 	}
