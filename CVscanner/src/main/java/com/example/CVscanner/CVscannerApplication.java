@@ -5,23 +5,22 @@ import org.springframework.ai.chat.client.advisor.PromptChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.repository.ListCrudRepository;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.ai.somepackage.QuestionAnswerAdvisor;
 
+
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import static org.yaml.snakeyaml.tokens.Token.ID.Value;
 
 @SpringBootApplication
 public class CVscannerApplication {
@@ -44,7 +43,7 @@ public class CVscannerApplication {
 
 		var system = """
 				You are an AI assistant named Greg that helps people sort through different CVs and then matches them 
-				with the approapiate Job Description. Information will be given to you. If there is no information,
+				with the appropriate Job Description. Information will be given to you. If there is no information,
 				return with a message.
 				""";
 		return builder.build();
@@ -53,7 +52,7 @@ public class CVscannerApplication {
 
 @Controller
 @ResponseBody
-class CVscannerAssistantController {
+class ScannerAssistantController {
 
 	private final ChatClient assistant;
 
@@ -63,15 +62,15 @@ class CVscannerAssistantController {
 	private final
 	QuestionAnswerAdvisor questionAnswerAdvisor;
 
-	CVscannerAssistantController(ChatClient assistant, VectorStore vectorStore) {
+	 ScannerAssistantController(ChatClient assistant, VectorStore vectorStore) {
 		this.assistant = assistant;
 		this.questionAnswerAdvisor = new QuestionAnswerAdvisor(vectorStore);
 	}
 
-	@GetMapping ("/{user}/inqurie")
+	@GetMapping ("/{user}/inquire")
 	String inquire(@PathVariable("user") String user, @RequestParam String question) {
 
-		var advisor = this.advisorMap.computeIfAbsent(user, _-> PromptChatMemoryAdvisor.builder(new InMemoryChatMemory()).build());
+		var advisor = this.advisorMap.computeIfAbsent(user, unused-> PromptChatMemoryAdvisor.builder(new InMemoryChatMemory()).build());
 
 		return this.assistant
 				.prompt()
@@ -79,6 +78,67 @@ class CVscannerAssistantController {
 				.advisors(advisor, this.questionAnswerAdvisor)
 				.call()
 				.content();
+	}
+	@PostMapping("/upload-cv")
+	public String uploadCv(@RequestParam("file") MultipartFile file) {
+		try {
+			// Save the uploaded file temporarily
+			File tempFile = File.createTempFile("uploaded-", file.getOriginalFilename());
+			try (FileOutputStream fos = new FileOutputStream(tempFile)) {
+				fos.write(file.getBytes());
+			}
+
+			// Use FileTextExtractorService to extract text
+			String extractedText = ExtractorService.extractText(tempFile);
+			String prompt= """
+					You are Greg, an AI assistant that matches job applicants to job descriptions.
+					            Below is a complete candidate profile. Based on their background, recommend the top 3 positions
+					            from our job database.
+					     
+					            Candidate Profile:
+					            • Name: %s
+					            • Email: %s
+					            • Phone: %s
+					            • Location: %s
+					            • Skills: %s
+					            • Education: %s
+					            • Experience: %s
+					            • CV Text Excerpt: %s
+					            • Applied At: %s
+					     For each recommended job, please provide:
+					                   1. Job Title & Company
+					                   2. A brief rationale (1–2 sentences)
+					                   3. A match score (0–100)
+					     
+					                 If no suitable match is found, simply respond: “No suitable match found.”
+					                 """.formatted(
+					                     candidate_name,
+					                     email,
+					                     phone_number,
+					                     location,
+					                     skills,
+					                     education,
+					                     experience,
+					                     cv_text,
+					                     created_at
+					                 );
+
+
+			// Ask AI assistant to match this CV to jobs
+			String aiResponse = this.assistant
+					.prompt()
+					.user(prompt)
+					.call()
+					.content();
+
+			// Delete temp file
+			tempFile.delete();
+
+			return aiResponse;
+
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to process uploaded CV", e);
+		}
 	}
 }
 
