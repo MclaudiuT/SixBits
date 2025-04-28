@@ -1,0 +1,42 @@
+Based on the job description provided in "job_description_14_Backend Developer.pdf" for the position of *Machine Learning Engineer - Backend Developer*, I have evaluated the provided applicant CVs.
+
+After reviewing the required qualifications, the following applicants demonstrate a potential match:
+
+*Andrei Munteanu:* Holds a Bachelor's degree in Computer Science and a Master's degree from University Politehnica of Bucharest. His experience includes developing an Inventory Management System using 
+                   *Java* and *Spring Boot, and a Real-time Analytics Dashboard utilizing **SQL* and *PostgreSQL. He also possesses experience with **AWS, **Docker, and **Kubernetes*. 
+                   While his projects don't explicitly mention machine learning model integration, his proficiency in Java, AWS, Docker, Kubernetes, and SQL aligns with the required and preferred skills.
+
+                  *Pros:* Bachelor's and Master's degrees in a relevant field. Proficiency in Java, SQL, and PostgreSQL. Experience with AWS, Docker, and Kubernetes. Developed backend systems with API integration.
+                  *Cons:* No explicit mention of "proven experience as a Backend Developer with a focus on machine learning applications" or familiarity with machine learning frameworks in his project descriptions.
+
+
+*Ana-Maria Călinescu:* Holds a Bachelor's and Master's degree in a relevant field from University Politehnica of Bucharest. Her experience includes developing an Online Bookstore Application using *Java* 
+                       and *Spring Boot* with a *PostgreSQL* database and deploying it using *Docker* and *Kubernetes. She also created a Healthcare Management System using **Python* and Django with *PostgreSQL* 
+                       and *Docker*. Her skills in Java, Python, SQL, PostgreSQL, Docker, and Kubernetes, along with experience in backend development and API implementation, align well.
+
+                     *Pros:* Bachelor's and Master's degrees in a relevant field. Proficiency in Java and Python. Strong understanding of SQL and PostgreSQL. Experience with Docker and Kubernetes. Developed backend applications with REST APIs.
+                     *Cons:* No direct mention of experience focused on machine learning applications or familiarity with machine learning frameworks.
+
+
+*Adrian Mihai Radu:* Holds a Bachelor's and Master's degree in a relevant field from University Politehnica of Bucharest. He developed an Inventory Management System using *Java* and *Spring Boot* with a 
+                     *PostgreSQL* database and *Docker. He also created an Online Learning Platform using **Python* and Django with *PostgreSQL* and *Kubernetes*. His proficiency in Java, Python, SQL, PostgreSQL, 
+                     Docker, and Kubernetes, combined with backend development experience, makes him a potential match.
+
+                     *Pros:* Bachelor's and Master's degrees in a relevant field. Proficiency in Java and Python. Experience with SQL and PostgreSQL. Familiarity with Docker and Kubernetes. Developed backend systems with API integration.
+                     *Cons:* No explicit indication of experience focusing on machine learning applications or familiarity with machine learning frameworks.
+
+
+*Adrian Stănescu:* Holds a Bachelor's and Master's degree in a relevant field from University Politehnica of Bucharest. He developed a Real-Time Collaboration Platform using *Node.js* and a backend deployed on 
+                   *AWS* with *Docker* and *Kubernetes, using **PostgreSQL* and *REST APIs. He also designed an E-commerce Microservices Architecture using **Java* and *Spring Boot* on *AWS* with *Kubernetes* and 
+                   *REST APIs*. His skills in JavaScript (Node.js), Java, Spring Boot, AWS, Docker, Kubernetes, PostgreSQL, and REST APIs align strongly with the requirements.
+
+                   *Pros:* Bachelor's and Master's degrees in a relevant field. Proficiency in Java and JavaScript (Node.js). Strong experience with AWS, Docker, and Kubernetes. Proven experience in developing backend systems with REST APIs and microservices architecture. Familiarity with SQL and PostgreSQL.
+                   *Cons:* No direct mention of experience with machine learning frameworks or a specific focus on machine learning applications in his project descriptions.
+
+
+Based on the current information, these applicants possess the fundamental backend development skills and experience with relevant technologies (cloud platforms, containerization, databases, and backend 
+programming languages) mentioned in the job description. However, none explicitly state "proven experience as a Backend Developer with a focus on machine learning applications" or showcase projects involving
+the integration of machine learning models.
+
+Therefore, based on the strict requirement of "proven experience as a Backend Developer with a focus on machine learning applications" and "Familiarity with machine learning frameworks and libraries (e.g., TensorFlow, PyTorch)", 
+*no applicants fully meet all the mandatory requirements* as described in the provided job description excerpts.
