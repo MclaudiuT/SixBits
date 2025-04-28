@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CTRL+HIRE</title>
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title">CTRL+HIRE</h1>
-      <div class="drag-drop-container">
-        <div class="buttons">
-          <label for="folder-input" class="button-label">
-            <button id="add-folder">Add Folder</button>
-          </label>
-          <input type="file" id="folder-input" webkitdirectory style="display: none" />
-          <button id="job-match">Job Match</button>
-          <button id="cv-match">CV Match</button>
-        </div>
-        <div class="drag-drop-area" id="drag-drop-area">
-          <p>Drag and drop your folder here</p>
-        </div>
-        <div class="sliders">
-          <label for="slider1">Parameter 1:</label>
-          <input type="range" id="slider1" min="0" max="100" />
-          <label for="slider2">Parameter 2:</label>
-          <input type="range" id="slider2" min="0" max="100" />
-          <label for="slider3">Parameter 3:</label>
-          <input type="range" id="slider3" min="0" max="100" />
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTRL+HIRE</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div class="container">
+  <h1 class="title">CTRL+HIRE</h1>
+
+  <!-- Upload / Controls -->
+  <div class="drag-drop-container">
+    <div class="buttons">
+      <label for="folder-input" class="button-label">
+        <button id="add-folder">Add Folder</button>
+      </label>
+      <!-- Allow multiple file uploads without webkitdirectory -->
+      <input type="file" id="folder-input" multiple style="display: none" />
+      <button id="job-match">Job Match</button>
+      <button id="cv-match">CV Match</button>
     </div>
-    <script src="scripts/app.js"></script>
-  </body>
+    <div class="drag-drop-area" id="drag-drop-area">
+      <p>Drag and drop your files here</p>
+    </div>
+    <div class="sliders">
+      <label for="slider1">Parameter 1:</label>
+      <input type="range" id="slider1" min="0" max="100" />
+      <label for="slider2">Parameter 2:</label>
+      <input type="range" id="slider2" min="0" max="100" />
+      <label for="slider3">Parameter 3:</label>
+      <input type="range" id="slider3" min="0" max="100" />
+    </div>
+  </div>
+
+  <!-- Results Table -->
+  <div class="results">
+    <h2>Matches</h2>
+    <table id="results-table">
+      <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Rationale</th>
+        <th>Score</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Populated dynamically by app.js -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Your updated JS -->
+<script src="scripts/app.js"></script>
+</body>
 </html>
