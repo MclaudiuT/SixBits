@@ -10,36 +10,73 @@ import java.time.Instant;
 @Component
 public class CvDataLoader implements CommandLineRunner {
 
-    private final CvRecordRepository repo;
+    private final CvRecordRepository cvRepo;
+    private final JobDescriptionRepository jobRepo;
 
     @Value("${app.cv.folder}")
-    private String folderPath;
+    private String cvFolderPath;
+    @Value("${app.job.folder}")
+    private String jobFolderPath;
 
-    public CvDataLoader(CvRecordRepository repo) {
-        this.repo = repo;
+    public CvDataLoader(CvRecordRepository cvRepo, JobDescriptionRepository jobRepo) {
+        this.cvRepo = cvRepo;
+        this.jobRepo = jobRepo;
     }
 
     @Override
     public void run(String... args) throws Exception {
-        File folder = new File(folderPath);
-        if (!folder.isDirectory()) {
-            System.err.println("CV folder not found: " + folderPath);
-            return;
+        // 1) Load CVs
+        File cvDir = new File(cvFolderPath);
+        if (cvDir.isDirectory()) {
+            for (File file : cvDir.listFiles()) {
+                if (!file.isFile()) continue;
+                String text = ExtractorService.extractText(file);
+                String name = stripExtension(file.getName());
+                CvRecord cv = new CvRecord(
+                        name,                     // candidateName
+                        "",                       // email (extract later)
+                        "",                       // phoneNumber
+                        "",                       // location
+                        "",                       // skills
+                        "",                       // education
+                        "",                       // experience
+                        text,                     // full CV text
+                        Instant.now()             // createdAt
+                );
+                cvRepo.save(cv);
+                System.out.println("Saved CV: " + name);
+            }
+        } else {
+            System.err.println("CV folder not found: " + cvFolderPath);
         }
 
-        for (File file : folder.listFiles()) {
-            if (!file.isFile()) continue;
-
-            String text = ExtractorService.extractText(file);
-            String name = file.getName().replaceFirst("\\.[^.]+$", "");
-            // you can parse more fields here if you like
-            CvRecord cv = new CvRecord(
-                    name, "", "", "",
-                    "", "", "",
-                    text, Instant.now()
-            );
-            repo.save(cv);
-            System.out.println("Saved CV for " + name);
+        // 2) Load Job Descriptions
+        File jobDir = new File(jobFolderPath);
+        if (jobDir.isDirectory()) {
+            for (File file : jobDir.listFiles()) {
+                if (!file.isFile()) continue;
+                String text = ExtractorService.extractText(file);
+                String title = stripExtension(file.getName());
+                JobDescription job = new JobDescription(
+                        title,                   // jobTitle
+                        "",                      // companyName (fill in later)
+                        "",                      // location
+                        text,                    // requirements (or whole blob)
+                        text,                    // responsibilities
+                        text,                    // preferredQualifications
+                        text,                    // description
+                        Instant.now()            // createdAt
+                );
+                jobRepo.save(job);
+                System.out.println("Saved Job Description: " + title);
+            }
+        } else {
+            System.err.println("Job folder not found: " + jobFolderPath);
         }
+    }
+
+    private String stripExtension(String filename) {
+        int idx = filename.lastIndexOf('.');
+        return (idx > 0 ? filename.substring(0, idx) : filename);
     }
 }
