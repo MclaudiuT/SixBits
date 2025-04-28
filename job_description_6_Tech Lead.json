@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Andrei Munteanu",
+    "matched_skills": [
+      "Java",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Sorin Mihai Bădescu",
+    "matched_skills": [
+      "AWS"
+    ]
+  },
+  {
+    "name": "Matei Dobreanu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker"
+    ]
+  },
+  {
+    "name": "Adrian Mircea Dobre",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker"
+    ]
+  },
+  {
+    "name": "Alina Teodora Stancu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker",
+      "AWS services"
+    ]
+  },
+  {
+    "name": "Mihai Călin Radu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker"
+    ]
+  },
+  {
+    "name": "Ana-Maria Călinescu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Andrei Mihail Constantinescu",
+    "matched_skills": [
+      "AWS (Certified)"
+    ]
+  },
+  {
+    "name": "Andrei Vasile Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker",
+      "Cloud-based platform experience"
+    ]
+  },
+  {
+    "name": "Ioana Vasile Teodorescu",
+    "matched_skills": [
+      "AWS",
+      "Google Cloud",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Florin Neagu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker"
+    ]
+  },
+  {
+    "name": "Mihai Călinescu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker",
+      "AWS deployment experience"
+    ]
+  },
+  {
+    "name": "Raluca Mihaiță Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker",
+      "AWS deployment experience"
+    ]
+  },
+  {
+    "name": "Cătălin Mihai Dumitrescu",
+    "matched_skills": [
+      "AWS (Certified)",
+      "Google Cloud (Certified)"
+    ]
+  },
+  {
+    "name": "Andrei Mihailescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "Python",
+      "Java",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Adrian Mihai Radu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Adrian Stănescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "Java",
+      "Node.js",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Microservices architecture experience"
+    ]
+  },
+  {
+    "name": "Andrei Călin Georgescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "Node.js",
+      "AWS (Lambda, S3)"
+    ]
+  },
+  {
+    "name": "Elena Cătălina Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker"
+    ]
+  },
+  {
+    "name": "Adrian Munteanu",
+    "matched_skills": [
+      "Python",
+      "AWS SageMaker",
+      "Docker",
+      "Kubernetes"
+    ]
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Andrei Munteanu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "Java",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Sorin Mihai Bădescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "AngularJS",
+      "VueJS",
+      "Git",
+      "REST APIs",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Matei Dobreanu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Adrian Mircea Dobre",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Alina Teodora Stancu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Mihai Călin Radu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Ana-Maria Călinescu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs",
+      "Node.js",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Andrei Mihail Constantinescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "AngularJS",
+      "VueJS",
+      "REST APIs",
+      "Git",
+      "AWS",
+      "Azure"
+    ]
+  },
+  {
+    "name": "Andrei Vasile Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Ioana Vasile Teodorescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "AWS",
+      "Google Cloud",
+      "Docker",
+      "SQL",
+      "PostgreSQL",
+      "OracleSQL",
+      "Git",
+      "REST APIs",
+      "Kubernetes",
+      "Node.js"
+    ]
+  },
+  {
+    "name": "Florin Neagu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Mihai Călinescu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Raluca Mihaiță Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Cătălin Mihai Dumitrescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "AngularJS",
+      "VueJS",
+      "REST APIs",
+      "Git"
+    ]
+  },
+  {
+    "name": "Andrei Mihailescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "Node.js",
+      "SQL",
+      "HTML",
+      "CSS",
+      "AngularJS",
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST APIs",
+      "TypeScript",
+      "VueJS",
+      "AWS",
+      "Docker",
+      "Java",
+      "Spring Boot",
+      "OracleSQL",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Adrian Mihai Radu",
+    "matched_skills": [
+      "Java",
+      "Spring Boot",
+      "Python",
+      "Django",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Adrian Stănescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs",
+      "Python",
+      "Django",
+      "Git",
+      "HTML",
+      "CSS"
+    ]
+  },
+  {
+    "name": "Andrei Călin Georgescu",
+    "matched_skills": [
+      "JavaScript",
+      "ReactJS",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "AngularJS",
+      "Git",
+      "VueJS",
+      "REST APIs",
+      "Node.js",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Elena Cătălina Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "name": "Adrian Munteanu",
+    "matched_skills": [
+      "Python",
+      "JavaScript",
+      "ReactJS",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ]
+  }
+]

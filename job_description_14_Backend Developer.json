@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Andrei Munteanu",
+    "matched_skills": [
+      "Java",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Sorin Mihai Bădescu",
+    "matched_skills": [
+      "AWS",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Matei Dobreanu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Adrian Mircea Dobre",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Alina Teodora Stancu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Mihai Călin Radu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Ana-Maria Călinescu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Andrei Mihail Constantinescu",
+    "matched_skills": [
+      "AWS",
+      "Azure",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Andrei Vasile Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Ioana Vasile Teodorescu",
+    "matched_skills": [
+      "AWS",
+      "Google Cloud",
+      "Docker",
+      "SQL",
+      "PostgreSQL",
+      "OracleSQL",
+      "REST APIs",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Florin Neagu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Mihai Călinescu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Raluca Mihaiță Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Cătălin Mihai Dumitrescu",
+    "matched_skills": [
+      "Azure",
+      "AWS",
+      "Google Cloud",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Andrei Mihailescu",
+    "matched_skills": [
+      "Python",
+      "PostgreSQL",
+      "REST APIs",
+      "AWS",
+      "Docker",
+      "Java",
+      "OracleSQL",
+      "Kubernetes"
+    ]
+  },
+  {
+    "name": "Adrian Mihai Radu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "SQL",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Adrian Stănescu",
+    "matched_skills": [
+      "Java",
+      "Python",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Andrei Călin Georgescu",
+    "matched_skills": [
+      "AWS",
+      "REST APIs"
+    ]
+  },
+  {
+    "name": "Elena Cătălina Dumitrescu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "name": "Adrian Munteanu",
+    "matched_skills": [
+      "Python",
+      "TensorFlow",
+      "AWS",
+      "Docker",
+      "SQL",
+      "PostgreSQL",
+      "Kubernetes"
+    ]
+  }
+]

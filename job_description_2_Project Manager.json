@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Andrei Munteanu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project management)",
+      "Communication skills (implied through collaboration)"
+    ]
+  },
+  {
+    "name": "Sorin Mihai Bădescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership)",
+      "Communication skills (implied through collaboration)"
+    ]
+  },
+  {
+    "name": "Matei Dobreanu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development)",
+      "Communication skills (implied through collaboration)"
+    ]
+  },
+  {
+    "name": "Adrian Mircea Dobre",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development)",
+      "Communication skills (implied through collaboration and UI/UX design)"
+    ]
+  },
+  {
+    "name": "Alina Teodora Stancu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development and deployment)",
+      "Communication skills (implied through collaboration and UI/UX design)"
+    ]
+  },
+  {
+    "name": "Mihai Călin Radu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and development)",
+      "Communication skills (implied through collaboration, UI/UX design, and user research)"
+    ]
+  },
+  {
+    "name": "Ana-Maria Călinescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development)",
+      "Communication skills (implied through API implementation)"
+    ]
+  },
+  {
+    "name": "Andrei Mihail Constantinescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development and design)",
+      "Communication skills (implied through collaboration and UI/UX design)"
+    ]
+  },
+  {
+    "name": "Andrei Vasile Dumitrescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development)",
+      "Communication skills (implied through UI design collaboration)"
+    ]
+  },
+  {
+    "name": "Ioana Vasile Teodorescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through system development)",
+      "Communication skills (implied through collaboration)"
+    ]
+  },
+  {
+    "name": "Florin Neagu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and development)",
+      "Communication skills (implied through collaboration, UI/UX design, and user testing)"
+    ]
+  },
+  {
+    "name": "Mihai Călinescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and development)",
+      "Communication skills (implied through collaboration, UI/UX design, and user research)"
+    ]
+  },
+  {
+    "name": "Raluca Mihaiță Dumitrescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development and deployment)",
+      "Communication skills (implied through UI/UX design and user feedback incorporation)"
+    ]
+  },
+  {
+    "name": "Cătălin Mihai Dumitrescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through application development)",
+      "Communication skills (implied through API integration)"
+    ]
+  },
+  {
+    "name": "Andrei Mihailescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and platform development)",
+      "Communication skills (implied through collaboration and API implementation)"
+    ]
+  },
+  {
+    "name": "Adrian Mihai Radu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through platform development)",
+      "Communication skills (implied through API implementation)"
+    ]
+  },
+  {
+    "name": "Adrian Stănescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and system architecture)",
+      "Communication skills (implied through API implementation and cross-functional collaboration)"
+    ]
+  },
+  {
+    "name": "Andrei Călin Georgescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and application development)",
+      "Communication skills (implied through collaboration and UI/UX design)"
+    ]
+  },
+  {
+    "name": "Elena Cătălina Dumitrescu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project development)",
+      "Communication skills (implied through collaboration, UI/UX design, and usability testing)"
+    ]
+  },
+  {
+    "name": "Adrian Munteanu",
+    "matched_skills": [
+      "Organizational skills (demonstrated through project leadership and optimization)",
+      "Communication skills (implied through collaboration, UI/UX design, and A/B testing)"
+    ]
+  }
+]
